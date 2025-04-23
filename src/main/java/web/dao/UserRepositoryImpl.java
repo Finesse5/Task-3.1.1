@@ -15,13 +15,11 @@ public class UserRepositoryImpl implements UserRepository {
     private EntityManager entityManager;
 
     @Override
-    @Transactional
     public void addUser(User user) {
         entityManager.persist(user);
     }
 
     @Override
-    @Transactional
     public void deleteUser(Long id) {
         User user = entityManager.find(User.class, id);
         if (user != null) {
@@ -30,7 +28,6 @@ public class UserRepositoryImpl implements UserRepository {
     }
 
     @Override
-    @Transactional
     public void updateUser(User user) {
         entityManager.merge(user);
     }
