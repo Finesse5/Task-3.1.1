@@ -36,13 +36,13 @@ public class UserServiceImpl implements UserService {
         userRepository.updateUser(user);
     }
 
-    @Transactional
+    @Transactional(readOnly = true)
     @Override
     public List<User> getAllUsers() {
         return userRepository.getAllUsers();
     }
 
-    @Override
+    @Transactional(readOnly = true)
     public User getUserById(Long id) {
         return userRepository.getUserById(id);
     }
