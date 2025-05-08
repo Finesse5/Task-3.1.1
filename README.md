@@ -1,4 +1,4 @@
-# Spring MVC + Hibernate CRUD App 2.3.1
+# Spring Boot 3.1.1
 
 ## 1. Список пользователей
 ![Список пользователей](https://github.com/user-attachments/assets/8b64ea7b-a98a-464c-baff-f629c28da33d)
